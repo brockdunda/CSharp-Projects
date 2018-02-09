@@ -15,10 +15,12 @@ namespace MvcMovie.Controllers
         }
 
         // Get: /HelloWorld/Welcome/
-        public string Welcome(string name, int numTimes = 1)
+        public string Welcome(string name, int ID = 1)
         {
             // Given a parameter this returns the parameter based string.
-            return HttpUtility.HtmlEncode("Hello " + name + ", NumTimes is: " + numTimes);
+            //return HttpUtility.HtmlEncode("Hello " + name + ", NumTimes is: " + numTimes);
+            // Again given a parameter, update the html using the parameters. The ID parameter is contained as a segment in the route parameter.
+            return HttpUtility.HtmlEncode("Hello " + name + ", ID: " + ID);
         }
     }
 }
