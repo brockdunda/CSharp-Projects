@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -14,11 +15,48 @@ namespace MvcMovie.Controllers
     {
         private MovieDBContext db = new MovieDBContext();
 
+        public IEnumerable GenreLst { get; private set; }
+
+        //// GET: Movies
+        //public ActionResult Index()
+        //{
+        //    return View(db.Movies.ToList());
+        //}
+
         // GET: Movies
-        public ActionResult Index()
+        public ActionResult Index(string movieGenre, string SearchString)
         {
-            return View(db.Movies.ToList());
+            var GenreList = new List<string>();
+
+            var GenreQry = from d in db.Movies
+                           orderby d.Genre
+                           select d.Genre; // Selects all the available genres from the db
+
+            GenreList.AddRange(GenreQry.Distinct()); // Limits the returned genre results via distinct genres
+            ViewBag.movieGenre = new SelectList(GenreList);
+
+            var movies = from m in db.Movies
+                         select m;
+            
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(SearchString));
+            }
+
+            if (!String.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(x => x.Genre == movieGenre);
+            }
+
+            return View(movies);
         }
+
+        // This will get ignored because the form submit will override it and default to the get method for Index Action Result
+        //[HttpPost]
+        //public string Index(FormCollection fc, string SearchString)
+        //{
+        //    return "<h3>From [HttpPost] Index: " + SearchString + "</h3>";
+        //}
 
         // GET: Movies/Details/5
         public ActionResult Details(int? id)

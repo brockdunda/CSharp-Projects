@@ -136,3 +136,5 @@ C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\Mv
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\bin\EntityFramework.SqlServer.xml
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Initial.resources
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.Cache
