@@ -7,6 +7,7 @@ namespace MvcMovie.Models
     public class Movie
     {
         public int ID { get; set; }
+        [StringLength(60, MinimumLength = 2)]
         public string Title { get; set; }
 
         [Display(Name = "Release Date")]
