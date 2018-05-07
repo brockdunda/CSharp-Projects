@@ -91,6 +91,7 @@ namespace FactoryConsoleApp
             PaymentProcessor2 paypal = new PaymentProcessor2();
             paypal.MakePayment(PaymentMethod.PAYPAL, product);
 
+            // Added BillDesk Payment
             PaymentProcessor2 payment2 = new PaymentProcessor2();
             payment2.MakePayment(PaymentMethod.BILL_DESK, product);
 
