@@ -46,6 +46,15 @@ namespace FactoryConsoleApp.PaymentFactory
         }
     }
 
+    public class BillDesk : IPaymentGateway
+    {
+        public void MakePayment(Product product)
+        {
+            // The api call for BillDesk
+            Console.WriteLine("Using Bill Desk to pay for {0},  amount ${1}", product.Name, product.Price);
+        }
+    }
+
     public enum PaymentMethod
     {
         BANK_ONE,
@@ -110,7 +119,7 @@ namespace FactoryConsoleApp.PaymentFactory
                     gateway = new PayPal();
                     break;
                 case PaymentMethod.BILL_DESK:
-                    // gateway = new BillDesk();
+                    gateway = new BillDesk();
                     break;
                 default:
                     base.CreatePaymentGateway(method, product);

@@ -83,13 +83,16 @@ namespace FactoryConsoleApp
             Console.WriteLine("Enter a price: ");
             product.Price = Convert.ToInt32(Console.ReadLine());
 
-            // Try with PayPal
-            PaymentProcessor2 paypal = new PaymentProcessor2();
-            paypal.MakePayment(PaymentMethod.PAYPAL, product);
-
             // With Bank using BestForMe
             PaymentProcessor payment = new PaymentProcessor();
             payment.MakePayment(PaymentMethod.BEST_FOR_ME, product);
+
+            // Try with PayPal has access to all the payment methods
+            PaymentProcessor2 paypal = new PaymentProcessor2();
+            paypal.MakePayment(PaymentMethod.PAYPAL, product);
+
+            PaymentProcessor2 payment2 = new PaymentProcessor2();
+            payment2.MakePayment(PaymentMethod.BILL_DESK, product);
 
             Console.WriteLine(product.Name + ' ' + product.Price);
 
