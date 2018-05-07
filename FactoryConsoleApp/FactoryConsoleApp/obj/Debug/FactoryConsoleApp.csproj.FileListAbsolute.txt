@@ -1,0 +1,7 @@
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\bin\Debug\FactoryConsoleApp.exe.config
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\bin\Debug\FactoryConsoleApp.exe
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\bin\Debug\FactoryConsoleApp.pdb
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\obj\Debug\FactoryConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\obj\Debug\FactoryConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\obj\Debug\FactoryConsoleApp.exe
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\FactoryConsoleApp\FactoryConsoleApp\obj\Debug\FactoryConsoleApp.pdb

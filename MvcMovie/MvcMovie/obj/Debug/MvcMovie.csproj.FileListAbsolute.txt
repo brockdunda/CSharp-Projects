@@ -139,3 +139,4 @@ C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\Mv
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Initial.resources
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.Cache
 C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Rating.resources
+C:\Users\bdunda\Desktop\Docs And Notes\Test Projects\CSharp-Projects\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.DataAnnotations.resources
