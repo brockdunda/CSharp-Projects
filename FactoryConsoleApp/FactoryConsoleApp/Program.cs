@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FactoryConsoleApp.PaymentFactory;
+using FactoryConsoleApp.Cars;
 
 namespace FactoryConsoleApp
 {
@@ -97,7 +98,22 @@ namespace FactoryConsoleApp
 
             Console.WriteLine(product.Name + ' ' + product.Price);
 
+            Console.WriteLine("Now the Cars portion of the program.");
             Console.Read();
+
+            // Cars
+            var fordFiestaFactory = new FordFiestaFactory();
+            var fordFiesta = fordFiestaFactory.CreateCar("Blue");
+            Console.WriteLine("Brand: {0} \nModel: {1} \nColor: {2}", fordFiesta.Make, fordFiesta.Model, fordFiesta.Color);
+            Console.Read();
+
+            Console.WriteLine("\n");
+            ICarSupplier objCarSupplier = CarFactory.GetCarInstance(2);
+            objCarSupplier.GetCarModel();
+            Console.WriteLine(" and color is " + objCarSupplier.CarColor);
+            Console.Read();
+            Console.Read();
+
         }//Main
     }//MainClass
 
