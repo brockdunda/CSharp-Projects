@@ -16,6 +16,7 @@ namespace FactoryConsoleApp.PaymentFactory
     public interface IPaymentGateway
     {
         void MakePayment(Product product);
+        // TODO: Should at some point also include user information
     }
 
     public class BankOne : IPaymentGateway
